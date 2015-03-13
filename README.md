@@ -15,6 +15,9 @@ current Rails JSON encoder, but we have not achieved our performance goals yet.
 
 Using this in production is **not** recommended.
 
+See [here](https://github.com/chancancode/json_caching#current-status) for the
+current state of the encoder's performance.
+
 ## Installation
 
 Add this line to your Rails application's Gemfile:
