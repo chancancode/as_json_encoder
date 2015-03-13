@@ -193,7 +193,7 @@ module AsJsonEncoder
       end
   end
 
-  SharedEncoderInstance = Encoder.new
+  SharedEncoderInstance = Encoder.new # :nodoc:
 
   class ActiveSupportAdapter # :nodoc:
     def initialize(options = nil)
