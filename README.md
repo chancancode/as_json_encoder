@@ -1,4 +1,6 @@
-# as_json JSON Encoder
+# as_json Encoder
+
+[![Build Status](https://travis-ci.org/chancancode/as_json_encoder.svg?branch=master)](https://travis-ci.org/chancancode/as_json_encoder)
 
 A JSON encoder that is tailored to the needs of Rails. The goal is to take
 advantage of the domain knowledge and speed up the JSON encoding process in

@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'as_json_encoder'
 
 # Stolen from activesupport/test/json/encoding_test.rb
@@ -5,7 +7,13 @@ require 'as_json_encoder'
 require 'securerandom'
 require 'active_support/testing/autorun'
 require 'active_support/core_ext/string/inflections'
+require 'active_support/core_ext/kernel/reporting'
 require 'active_support/time'
+
+silence_warnings do
+  Encoding.default_internal = "UTF-8"
+  Encoding.default_external = "UTF-8"
+end
 
 # Skips the current run on Rubinius using Minitest::Assertions#skip
 def rubinius_skip(message = '')
